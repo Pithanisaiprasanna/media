@@ -1,0 +1,51 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  border:2px solid;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.item{
+  padding: 10px;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+ background-color: red; 
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.pink{
+  background-color: pink;
+  display: none;
+}
+.yellow{
+  background-color: yellow;
+  display: none;
+}
+
+@media screen and (max-width: 500px){
+  .orange,.pink,.blue,.green,.yellow{
+    display: none;
+  }
+  .nav{
+    justify-content: center;
+  }
+}
+@media screen and (min-width:500px) and (max-width: 800px){
+ .red,.green,.blue{
+  display:none;
+ } 
+ .yellow,.pink{
+  display: inline;
+ }
+}
